@@ -5,4 +5,8 @@ title: Hello World
 
 还有很多不完善的，时间也比较仓促，以后慢慢弄吧···
 
+记个hexo的命令：
+  - hexo s 本地预览
+  - hexo clean && hexo g && hexo d 发布到github
+
 happy every day!!!
