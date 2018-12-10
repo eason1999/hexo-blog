@@ -92,3 +92,31 @@ title: react-router V4
    ```javascript
     <Redirect to="register" />
    ```
+
+  ### react中子组件取不到this.props.history?
+
+  `react` 中被`react-redux`包裹的子组件取不到`this.props.history`对象，咋办？
+  - 首先我们需要`prop-types`
+   
+   ```javascript
+    import PropTypes from 'prop-types'
+   ```
+  
+  - 组件需要设置contextTypes
+   
+   ```javascript
+    Component.contextTypes = {
+      router: PropTypes.object.isRequired
+    }
+   ```
+  
+  - 之后在组件内可以如下使用
+
+   ```javascript
+    console.log(this.context) 
+    // {
+    //   router:
+    //     history: ...
+    // }
+    this.context.router.history.push(...)
+   ```
