@@ -120,3 +120,22 @@ title: react-router V4
     // }
     this.context.router.history.push(...)
    ```
+
+   ### react路由重定向
+
+  - 标签实现
+    ```javascript
+
+    <Redirect to={path}>
+
+    ```
+   
+  - 编程式
+
+    ```javascript
+
+    // 访问this.context对象下的history对象
+    
+    this.context.router.history.replace(path)
+
+    ```

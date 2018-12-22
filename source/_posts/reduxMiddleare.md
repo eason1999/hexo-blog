@@ -124,7 +124,7 @@ title: Redux中间件之redux-thunk和redux-saga
 - 不同处
  - `thunk`操作简便点，在`action`中返回一个函数，其中可处理异步逻辑
  - `saga`则是`store`目录下新建`**.js`文件统一管理异步处理函数（这里需要提醒，这个js返回的是一个`generator`函数，这是一个ES6的语法）
- - `saga`相对更复杂
+ - `saga`相对更复杂，学习曲线陡峭
 
 ### redux-saga这么麻烦，为啥还要用？
  
