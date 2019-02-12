@@ -59,4 +59,21 @@ title: 归并排序
  
   ```
 
+  *PS：简单粗暴的上下顺序更改，记录下*
+
+  ```javascript
+
+    handleSortArr(arr, preIndex, nextIndex) {
+      arr[preIndex] = arr.splice(nextIndex, 1, arr[preIndex])[0]
+      return arr
+    },
+    doUpSort(parentIndex, currentIndex) {
+      this.handleSortArr(this.dataList[parentIndex].goodsList, currentIndex, currentIndex - 1)
+    },
+    doDownSort(parentIndex, currentIndex) {
+      this.handleSortArr(this.dataList[parentIndex].goodsList, currentIndex, currentIndex + 1)
+    }
+
+  ```
+
   *感谢作者--菠了个菜，来源其个人公众号「五分钟学算法」。「五分钟学算法」是致力于通过各种动画的形式来描绘出各种数据结构，并图解LeetCode原题的学习平台，一起学习，一起进步！*
