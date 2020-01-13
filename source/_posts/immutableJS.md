@@ -115,3 +115,6 @@ title: immutable.js 在redux项目中实践
  6. immutable对象直接可以转JSON.stringify(),不需要显式手动调用toJS()转原生
  7. 判断对象是否是空可以直接用size
  8. 调试过程中要看一个immutable变量中真实的值，可以chrome中加断点，在console中使用.toJS()方法来查看
+
+
+ ##### * 觉得有点用给个赞呀！谢谢。。。
